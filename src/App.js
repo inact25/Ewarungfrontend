@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import RegisterLayout from "./interfaces/Layout/RegisterLayout";
+import LoginLayout from "./interfaces/Layout/LoginLayout";
+import NavBar from "./components/Navigation/NavBar";
+import ServicesInterface from "./interfaces/Core/Users/ServicesInterface";
+import CategoriesInterface from "./interfaces/Core/Users/CategoriesInterface";
+import TransactionLayout from "./interfaces/Layout/TransactionLayout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+      <TransactionLayout/>
     </div>
   );
 }
